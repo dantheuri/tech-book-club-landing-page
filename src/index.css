@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: "MartianMono";
+  src: url("./assets/fonts/martian-mono/MartianMono-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "InterVariable";
+  src: url("./assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-inter: "InterVariable";
+  --font-martian: "MartianMono";
+}

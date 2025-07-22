@@ -2,7 +2,7 @@ import starIcon from "../assets/images/icon-star.svg";
 
 const Testimonial = () => {
   return (
-    <div className="flex flex-col lg:items-center gap-8 px-4">
+    <div className="flex flex-col lg:items-center gap-8 px-4 sm:px-0">
       <div className="flex">
         <img src={starIcon} alt="Review Star" />
         <img src={starIcon} alt="Review Star" />

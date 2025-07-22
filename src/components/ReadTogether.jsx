@@ -4,12 +4,12 @@ import mobileReadTogetherImage from "../assets/images/mobile/image-read-together
 
 export default function ReadTogether() {
   return (
-    <section className="lg:flex lg:justify-center px-4">
-      <div className="flex flex-col gap-10 lg:flex-row lg:gap-20">
+    <section className="lg:flex lg:justify-center px-4 sm:px-0">
+      <div className="lg:max-w-[73.125rem] flex flex-col gap-10 lg:flex-row lg:gap-20">
         <img
           src={readTogetherImage}
           alt="Group Reading Together"
-          className="hidden md:block w-[560px] rounded-lg"
+          className="hidden md:block lg:w-[33.75rem] rounded-lg"
         />
         <div className="flex flex-col gap-6 lg:gap-9 lg:w-[530px] justify-center">
           <h1 className="font-martian font-semibold text-[2.125em]/11 sm:text-[3.125em] leading-16 tracking-[-2px] lg;max-w-[14ch]">

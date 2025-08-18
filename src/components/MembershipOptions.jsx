@@ -3,8 +3,8 @@ import checkIcon from "../assets/images/icon-check.svg";
 const MembershipOptions = () => {
   return (
     <section className="flex justify-center">
-      <div className="w-full lg:max-w-[73.125rem] flex flex-col lg:items-center gap-16 px-4 sm:px-0">
-        <h1 className="font-martian font-semibold text-[2.125em]/11 sm:text-[3.125em] leading-16">
+      <div className="w-full lg:max-w-[74rem] flex flex-col lg:items-center gap-16 px-4 sm:px-0 sm:pl-10">
+        <h1 className="font-martian font-semibold text-4xl/11 sm:text-[3.125em] leading-16">
           Membership options
         </h1>
         <div className="w-full flex flex-wrap lg:justify-center lg:items-center gap-6">

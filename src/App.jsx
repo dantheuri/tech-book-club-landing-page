@@ -8,7 +8,7 @@ import Testimonial from "./components/Testimonial";
 
 function App() {
   return (
-    <div className="flex flex-col gap-16 lg:gap-30">
+    <div className="flex flex-col gap-10 lg:gap-30">
       <Header />
       <ReadTogether />
       <CommunityIntro /> 

@@ -10,7 +10,7 @@ const Footer = () => {
         <h1 className="font-martian text-[2.125em]/11 sm:text-[3.125em]/16 tracking-[-2px] text-center max-w-[18ch] lg:w-[685px]">
           Ready to debug your reading list?
         </h1>
-        <button className="mt-10 max-w-full lg:w-[380px] h-[63px] border-2 border-white rounded-lg">
+        <button className="mt-10 max-w-full hover:bg-gradient-to-r from-[#385159] to-[#062630] hover:cursor-pointer lg:w-[380px] h-[63px] border-2 border-white rounded-lg">
           Review membership options
         </button>
         <div className="mt-6 flex gap-3">

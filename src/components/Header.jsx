@@ -1,4 +1,3 @@
-
 import logo from "../assets/images/logo.svg";
 import avatars from "../assets/images/image-avatars.webp";
 import starIcon from "../assets/images/icon-star.svg";
@@ -14,14 +13,19 @@ import patternGlow from "../assets/images/pattern-glow.svg";
 
 export default function Header() {
   return (
-    <header className="bg-[#FAF5F3] pt-9 w-full flex justify-center px-4 sm:px-10 lg:px-4">
+    <header className="bg-[#FAF5F3] pt-9 w-full flex justify-center px-4 sm:px-10 lg:px-4 overflow-hidden">
       <div className="md:max-w-[1110px] lg:w-[1110px]">
         <div className="w-full">
           <img src={logo} alt="Tech Book Club Logo" />
         </div>
-        <section className="hero w-full lg:flex lg:gap-10 py-12">
-          <div className="hero-content flex flex-col">
-            <h1 className="font-martian font-bold sm:max-lg:font-semibold text-3xl sm:text-6xl lg:text-5xl/18  xl:text-6xl/18 lg:max-w-[13ch] tracking-[-2px]">
+        <section className="relative hero w-full lg:flex lg:gap-10 py-12">
+          <img
+            src={patternGlow}
+            alt=""
+            className="hidden sm:block absolute right-[-50%] top-[75%] transform -translate-y-1/2 w-full scale-150 h-full pointer-events-none"
+          />
+          <div className="hero-content flex flex-col justify-center relative z-10">
+            <h1 className="font-martian font-bold sm:max-lg:font-semibold text-3xl sm:text-6xl lg:text-5xl/18 xl:text-6xl/18 lg:max-w-[13ch] tracking-[-2px] bg-gradient-to-br from-[#FEA36F] to-[#062630] bg-clip-text text-transparent">
               Join the ultimate tech book club
             </h1>
             <p className="font-inter sm:max-lg:text-xl text-lg/7 lg:w-[43ch] mt-6">
@@ -29,7 +33,7 @@ export default function Header() {
               enthusiasts. Get curated recommendations, join vibrant
               discussions, and level up your skills one chapter at a time.
             </p>
-            <button className="border-3 flex gap-4 justify-center mt-8 md:max-w-[24rem] lg:max-w-none lg:w-[24.5rem] py-5 rounded-lg">
+            <button className="border-3 hover:bg-gradient-to-r from-[#FFE2D1] to-[#FFF5EF] hover:cursor-pointer flex gap-4 justify-center mt-8 md:max-w-[24rem] lg:max-w-none lg:w-[24.5rem] py-5 rounded-lg">
               <p className="font-martian font-semibold text-sm sm:text-lg uppercase">
                 Review membership options
               </p>
@@ -43,6 +47,7 @@ export default function Header() {
                   <img src={starIcon} alt="Review Star" />
                   <img src={starIcon} alt="Review Star" />
                   <img src={starIcon} alt="Review Star" />
+                  <img src={starIcon} alt="Review Star" />
                 </div>
                 <p className="font-martian text-sm">
                   200+ developers joined already
@@ -50,8 +55,12 @@ export default function Header() {
               </div>
             </div>
           </div>
-          <picture>
-            <source media="(max-width: 767px)" srcSet={mobileHeroImage} className="mobile-hero" />
+          <picture className="relative z-10">
+            <source
+              media="(max-width: 767px)"
+              srcSet={mobileHeroImage}
+              className="mobile-hero"
+            />
             <source
               media="(min-width: 768px) and (max-width: 1024px)"
               srcSet={desktopHeroImage}

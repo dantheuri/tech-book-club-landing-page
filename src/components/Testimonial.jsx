@@ -8,6 +8,7 @@ const Testimonial = () => {
         <img src={starIcon} alt="Review Star" />
         <img src={starIcon} alt="Review Star" />
         <img src={starIcon} alt="Review Star" />
+        <img src={starIcon} alt="Review Star" />
       </div>
      
         <p className="font-martian font-semibold text-2xl lg:text-[2.125em] lg:text-center lg:max-w-[60rem] tracking-[-1px]">
